@@ -1,0 +1,175 @@
+{
+  "id": "b0348148-8068-4c18-86a0-7f750acedaab",
+  "version": "2.0",
+  "name": "AC02-LoginViaFacebook",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "3b0bd706-d513-47c4-8dc6-c2e5399aaab3",
+    "name": "LoginViaFacebook",
+    "commands": [{
+      "id": "b050d628-c72c-4f9e-8aa2-fe35f2b8de86",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76e91ba7-dee8-4cf9-b436-635cf50eb3ab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7f65a72-dd5c-4d13-9fad-c3fe537860f5",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "kabum"
+    }, {
+      "id": "5fb3c07c-d550-43ec-8450-a674c0c61c95",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0e21242a-1022-483f-85da-d93cecce49c9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=div:nth-child(2) > .rc .LC20lb",
+      "targets": [
+        ["css=div:nth-child(2) > .rc .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//div/div/a/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'KaBuM! - Explosão de Preços Baixos!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00815c8f-6968-4877-aa19-b0789aad3376",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .rc .LC20lb",
+      "targets": [
+        ["css=div:nth-child(2) > .rc .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//div/div/a/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'KaBuM! - Explosão de Preços Baixos!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "943520e9-a5cf-4a84-8267-3e7c98b719b1",
+      "comment": "",
+      "command": "//mouseOver",
+      "target": "linkText=LOGIN | CADASTRE-SE",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92923341-a277-48ad-ada6-90b058a33430",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN | CADASTRE-SE",
+      "targets": [
+        ["linkText=LOGIN | CADASTRE-SE", "linkText"],
+        ["css=#li-login-usuario > a", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN | CADASTRE-SE')]", "xpath:link"],
+        ["xpath=//li[@id='li-login-usuario']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.kabum.com.br/cgi-local/site/login/login.cgi')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN | CADASTRE-SE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d02ece52-9469-4d05-b8a1-e53fe0be54d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnFacebook",
+      "targets": [
+        ["css=.btnFacebook", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//table[@id='redes-sociais']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Facebook')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9971",
+      "windowTimeout": 2000
+    }, {
+      "id": "8aa4e7cc-e069-41a6-b646-a46d4b38a946",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "288a3630-0f53-4f72-8841-82f2e36c15f5",
+      "comment": "",
+      "command": "//selectWindow",
+      "target": "handle=${win9971}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fc0f709-db3e-40ef-a72f-01aca9a5b431",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "451f49c0-6cc3-4329-bcae-13e447c4e660",
+      "comment": "",
+      "command": "//selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "583c05f7-e6b6-4fb0-ac21-773379f48d7d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ec-internal-promotion:nth-child(2)",
+      "targets": [
+        ["css=.ec-internal-promotion:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='BlocoBannerTopo']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.kabum.com.br/cgi-local/site/tools/banner.cgi?W=Lx1257&int_banner_name=THEME-ESPECIAL-HYPERX-MAR&int_banner_position=tematizacao_home')]", "xpath:href"],
+        ["xpath=//main/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fb75111-ffbf-452f-bbd4-0098c126e4ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=#btn-fechar img",
+      "targets": [
+        ["css=#btn-fechar img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://static.kabum.com.br/conteudo/temas/001/imagens/topo/bot_logout.png')]", "xpath:img"],
+        ["xpath=//li[@id='btn-fechar']/a/img", "xpath:idRelative"],
+        ["xpath=//li[5]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "34adcd3f-4caa-4089-b2a6-2782fc46982f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
